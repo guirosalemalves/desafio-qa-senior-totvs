@@ -1,4 +1,5 @@
 import LoginPage from '../pages/LoginPage'
+import CartPage from '../pages/CartPage'
 
 describe('Carrinho', () => {
 
@@ -8,9 +9,8 @@ describe('Carrinho', () => {
     })
 
     it('Deve adicionar dois produtos ao carrinho', () => {
-        cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
-        cy.get('[data-test="add-to-cart-sauce-labs-bike-light"]').click()
-        cy.get('.shopping_cart_badge').should('have.text', '2')
+        CartPage.adicionarProdutos()
+        CartPage.validarQuantidadeCarrinho(2)
     })
 
 })

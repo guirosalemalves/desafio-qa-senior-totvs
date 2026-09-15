@@ -9,6 +9,10 @@ class LoginPage {
         cy.get('[data-test="password"]').type(senha)
         cy.get('[data-test="login-button"]').click()
     }
+    validarLoginComSucesso() {
+    cy.url().should('include', '/inventory.html')
+    cy.get('.title').should('have.text', 'Products')
+    }
 }
 
 export default new LoginPage()
