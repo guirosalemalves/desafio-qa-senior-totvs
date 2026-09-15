@@ -1,0 +1,5 @@
+teste@exemplo.com
+invalido-email.com
+usuario@dominio.inexistente12345.com
+teste@gmail.com
+guilherme@totvs.com

@@ -1,0 +1,6 @@
+email,status,motivo
+teste@exemplo.com,Valido,
+invalido-email.com,Invalido,Sintaxe invalida
+usuario@dominio.inexistente12345.com,Invalido,Dominio nao possui registro MX
+teste@gmail.com,Valido,
+guilherme@totvs.com,Valido,
