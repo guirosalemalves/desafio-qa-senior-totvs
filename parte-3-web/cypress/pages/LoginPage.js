@@ -10,8 +10,8 @@ class LoginPage {
         cy.get('[data-test="login-button"]').click()
     }
     validarLoginComSucesso() {
-    cy.url().should('include', '/inventory.html')
-    cy.get('.title').should('have.text', 'Products')
+        cy.url().should('include', '/inventory.html')
+        cy.get('.title').should('have.text', 'Products')
     }
 }
 
