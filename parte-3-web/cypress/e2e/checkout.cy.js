@@ -20,6 +20,8 @@ describe('Checkout', () => {
         CheckoutPage.continuar()
         CheckoutPage.finalizarCompra()
         CheckoutPage.validarCompraFinalizada()
+
+        cy.screenshot('../../evidencias/03-checkout-finalizado')
     })
 
 })

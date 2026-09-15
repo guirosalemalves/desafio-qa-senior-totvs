@@ -6,5 +6,7 @@ describe('Login', () => {
         LoginPage.acessar()
         LoginPage.realizarLogin('standard_user', 'secret_sauce')
         LoginPage.validarLoginComSucesso()
+
+        cy.screenshot('../../evidencias/01-login-sucesso')
     })
 })
