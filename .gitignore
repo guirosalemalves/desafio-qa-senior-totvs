@@ -1,3 +1,6 @@
 **/target/
 **/node_modules/
 **/*.class
+**/*.jtl
+**/relatorio/
+**/jmeter.log
